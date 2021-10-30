@@ -1,10 +1,3 @@
-import * as React from 'react'
-import styles from './styles.module.css'
+import { Web3ContextProvider, useWeb3 } from './Web3Context'
 
-interface Props {
-  text: string
-}
-
-export const ExampleComponent = ({ text }: Props) => {
-  return <div className={styles.test}>Example Component: {text}</div>
-}
+export { Web3ContextProvider as Web3Container, useWeb3 }
