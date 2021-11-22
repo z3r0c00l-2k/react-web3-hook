@@ -51,8 +51,7 @@ const Web3ContextProvider: React.FC = ({ children }) => {
 
         web3Ref.current = web3
         setAccounts(ethAccounts)
-        const address = await web3.eth.getCoinbase()
-        setCurrentAddress(address)
+        setCurrentAddress(ethAccounts[0])
         const network = await web3.eth.net.getNetworkType()
         setNetwork(network)
         const ethExploredUrl = `https://${
