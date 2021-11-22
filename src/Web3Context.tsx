@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useRef, useState } from 'react'
 import Web3 from 'web3'
 
-type Web3ContextState = {
+export type Web3ContextState = {
   isWeb3: boolean
   isLoaded: boolean
   web3: Web3 | null
