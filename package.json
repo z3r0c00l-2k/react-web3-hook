@@ -4,7 +4,10 @@
   "description": "Web3 hook for react",
   "author": "z3r0c00l-2k",
   "license": "MIT",
-  "repository": "z3r0c00l-2k/react-web3-hook",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/z3r0c00l-2k/react-web3-hook.git"
+  },
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.tsx",
@@ -62,5 +65,20 @@
   ],
   "dependencies": {
     "web3": "^1.6.0"
-  }
+  },
+  "types": "./dist/index.d.ts",
+  "bugs": {
+    "url": "https://github.com/z3r0c00l-2k/react-web3-hook/issues"
+  },
+  "homepage": "https://github.com/z3r0c00l-2k/react-web3-hook#readme",
+  "directories": {
+    "example": "example"
+  },
+  "keywords": [
+    "web3",
+    "react-web3",
+    "react-ethereum",
+    "react-metamask",
+    "metamask"
+  ]
 }

@@ -8,21 +8,42 @@
 
 ```bash
 npm install --save react-web3-hook
+
+OR
+
+yarn add react-web3-hook
 ```
 
 ## Usage
 
+App.tsx
 ```tsx
-import React, { Component } from 'react'
 
-import MyComponent from 'react-web3-hook'
-import 'react-web3-hook/dist/index.css'
+import { Web3Container } from 'react-web3-hook';
 
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
-}
+const App = () => {
+  return (
+    <Web3Container >
+      {...}
+    </Web3Container>
+  );
+};
+
+export default App;
+```
+
+web3 hook
+```tsx
+
+const {
+  isLoaded,
+  isWeb3,
+  accounts,
+  network,
+  networkId,
+  explorerUrl,
+  currentAddress,web3,error
+  } = useWeb3()
 ```
 
 ## License
